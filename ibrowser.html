@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>IBrowser</title>
+</head>
+<script src="ibrowser.js"></script>
+<style>
+    .input-group iframe {
+	background-color: transparent;
+    border: 1px solid #ccc
+	border-radius:4px;
+	width:98vw;
+	height:87.5vh;
+	}
+	.input-group input[type=text]{
+	width:95vw;height:38px;
+	}
+	.input-group .input-group-append {width:98vw}
+	.input-group button {
+	height:38px;
+	width:38px;
+	content:"\2192";
+	}
+	.panel-container {
+	margin: 0 auto;
+	width: 100%;
+	}
+</style>
+
+<body>
+<div class="panel-container">
+	
+		<div class="panel-body">		
+			<div id="primary-panel" >			
+			<div class="input-group mb-3">
+			    <div class="input-group-append">
+				<form action="#" >
+				<input type="text" class="form-control" id="addressbar" onkeypress="handle(event)" value="https://www.htmeditor.com/author/" /></form>
+				<button class="btn btn-default" onclick="navigate(document.getElementById('addressbar').value);" type="button">&#8594;</button></div>
+				<iframe id="browser-control" class="form-control" src="https://www.htmeditor.com/author/" />
+			</div>
+			</div>
+		</div>
+			
+			
+</div>
+
+</body></html>
