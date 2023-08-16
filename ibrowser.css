@@ -3,7 +3,7 @@
 .input-group input[type=text]{width:96vw;height:38px;} .panel-container {margin: 0 auto;width: 100%;}
 .input-group .input-group-append {width:98vw} .input-group button {height:38px;width:38px;position:absolute;right:0;content:"\2192";}
 .mobile-container {max-width:100%;margin: 0;background-color:white;height: 500px;color: white;border-radius: 10px;}
-.topnav {overflow: hidden;background-color: #333;position: relative;}
+.topnav {overflow: hidden;background-color: black;position: relative;}
 .topnav #myLinks {display: none;} .topnav #myLinks2 {display: none;}
 .topnav a {color: white;padding: 8px 11px;text-decoration: none;font-size: 17px;display: block;}
 .topnav a.icon {background: black;display: block;position: absolute;right:0;top: 0;}
