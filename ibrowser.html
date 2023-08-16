@@ -1,47 +1,46 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>IBrowser</title>
-</head>
-<script src="ibrowser.js"></script>
-<style>
-    .input-group iframe {
-	background-color: transparent;
-    border: 1px solid #ccc
-	border-radius:4px;
-	width:98vw;
-	height:87.5vh;
-	}
-	.input-group input[type=text]{
-	width:95vw;height:38px;
-	}
-	.input-group .input-group-append {width:98vw}
-	.input-group button {
-	height:38px;
-	width:38px;
-	content:"\2192";
-	}
-	.panel-container {
-	margin: 0 auto;
-	width: 100%;
-	}
-</style>
+<title>iframebrowser</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+</head>
 <body>
-<div class="panel-container">
-	
-		<div class="panel-body">		
-			<div id="primary-panel" >			
-			<div class="input-group mb-3">
-			    <div class="input-group-append">
-				<form action="#" >
-				<input type="text" class="form-control" id="addressbar" onkeypress="handle(event)" value="https://www.htmeditor.com/author/" /></form>
-				<button class="btn btn-default" onclick="navigate(document.getElementById('addressbar').value);" type="button">&#8594;</button></div>
-				<iframe id="browser-control" class="form-control" src="https://www.success-trending.club/p/quote-of-day.html" />
-			</div>
-			</div>
-		</div>
-			
-			
+<div class="mobile-container">
+<div class="topnav">
+  <a href="#home" class="active" contentEditable="true" onblur="setTitle(this.innerText);">iframebrowser</a>
+  <div id="myLinks">
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction();">
+    <i class="fa fa-star"></i>
+  </a>
+  <a href="javascript:void(0);" class="icon2" onclick="myFunction2();">
+    <i class="fa fa-plus"></i>
+  </a>
+  <a href="javascript:void(0);" class="icon3" onclick="myFunction3();">
+    <i class="fa fa-home"></i>
+  </a>
 </div>
 
-</body></html>
+<div class="panel-container">
+	<div class="panel-body" style="padding:0">		
+		<div id="primary-panel" >			
+			<div class="input-group" style="margin:0;padding:0;width:100%">
+			    <div class="input-group-append">
+				<form action="#" >
+				<input type="text" class="form-control" id="addressbar" onkeypress="handle(event)" value="" /></form>
+				<button class="btn btn-default" onclick="navigate(document.getElementById('addressbar').value);" type="button">&#8594;</button></div>
+				<iframe id="browser-control" name="browser-control" class="form-control" src="about:blank" ></iframe>
+			</div>
+		</div>
+	</div>			
+</div>
+
+</div>
+<script>
+init();
+</script>
+
+</body>
+</html>
