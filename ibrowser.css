@@ -9,4 +9,4 @@
 .topnav a.icon {background: black;display: block;position: absolute;right:0;top: 0;}
 .topnav a.icon2 {background: black;display: block;position: absolute;right:35px;top: 0;}
 .topnav a.icon3 {background: black;display: block;position: absolute;right:70px;top: 0;}
-.topnav a:hover {background-color: #ddd;color: black;}.active {background-color: black;color: white;}
+.topnav a:hover {background-color: #f7f7f7;color: black;}.active {background-color: black;color: white;}
